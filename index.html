@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweet Treats Bakery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #f0f8ff, #e6e6e6 20px, #f0f8ff 40px);
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    header nav a {
+      text-decoration: none;
+      color: #333;
+      margin-right: 20px;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+
+    header nav a:hover {
+      background-color: #f0f8ff;
+    }
+
+    .order-button {
+      background-color: #f0f8ff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .order-button:hover {
+      background-color: #d9eefe;
+    }
+
+    main {
+      padding: 50px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .featured-item {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+
+    .featured-item img {
+      width: 250px;
+      margin-right: 20px;
+      border-radius: 5px;
+    }
+
+    .featured-item p {
+      flex: 1;
+      font-size: 16px;
+    }
+
+    .add-to-cart {
+      background-color: #333;
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .add-to-cart:hover {
+      background-color: #4d4d4d;
+    }
+
+    .seasonal-promo {
+      background-color: #f0f8ff;
+      padding: 20px;
+      border-radius: 5px;
+      margin-top: 40px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #eee;
+      margin-top: 50px;
+    }
+
+    footer p {
+      margin-bottom: 10px;
+    }
+
+    .map-container {
+      width: 300px;
+      margin: 10px auto;
+    }
+
+    @media screen and (max-width: 768px) {
+      .featured-item {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .featured-item img {
+        margin-bottom: 10px;
+      }
+
+      .map-container {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Menu</a>
+      <a href="#">Our Story</a>
+      <a href="#">Visit Us</a>
+    </nav>
+    <a href="#menu" class="order-button">Order Online</a>
+  </header>
+
+  <main>
+    <h2>Featured Baked Goods</h2>
+
+    <div class="featured-item">
+      <img src="images/cupcake.jpg" alt="Cupcake">
